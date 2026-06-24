@@ -1,0 +1,280 @@
+<mxfile host="Electron" pages="2">
+  <diagram id="GcOGLZXv0QyUARNXkOD_" name="NEW Databricks-Fabric Arch">
+    <mxGraphModel dx="1488" dy="885" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="f6epddOMIslxKHVdH9le-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B3A5C;strokeColor=#0F2440;fontColor=#FFFFFF;verticalAlign=top;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="☁️ Azure Databricks Unity Catalog" vertex="1">
+          <mxGeometry height="130" width="1120" x="120" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-2" parent="f6epddOMIslxKHVdH9le-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F0;strokeColor=#999990;fontColor=#1B3A5C;fontSize=13;" value="Gold Schema 1" vertex="1">
+          <mxGeometry height="44" width="190" x="65" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-3" parent="f6epddOMIslxKHVdH9le-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F0;strokeColor=#999990;fontColor=#1B3A5C;fontSize=13;" value="Gold Schema 2" vertex="1">
+          <mxGeometry height="44" width="190" x="375" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-4" parent="f6epddOMIslxKHVdH9le-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F0;strokeColor=#999990;fontColor=#1B3A5C;fontSize=13;" value="..." vertex="1">
+          <mxGeometry height="36" width="80" x="675" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-5" parent="f6epddOMIslxKHVdH9le-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F0;strokeColor=#999990;fontColor=#1B3A5C;fontSize=13;" value="Gold Schema N" vertex="1">
+          <mxGeometry height="44" width="190" x="865" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFDE;strokeColor=#AAAA33;fontColor=#5A5A1A;verticalAlign=top;align=left;spacingLeft=10;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="&amp;nbsp; &amp;nbsp;Microsoft Fabric — 150 Workspaces (1:1 to Gold Schemas)" vertex="1">
+          <mxGeometry height="255" width="1120" x="120" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-7" parent="f6epddOMIslxKHVdH9le-6" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#0078D4;fontColor=#1B3A5C;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="Workspace 1" vertex="1">
+          <mxGeometry height="200" width="280" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-8" parent="f6epddOMIslxKHVdH9le-7" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F8A70;strokeColor=#136351;fontColor=#FFFFFF;fontSize=12;" value="Lakehouse - UC Shortcuts" vertex="1">
+          <mxGeometry height="36" width="240" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-9" parent="f6epddOMIslxKHVdH9le-7" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Power BI Semantic Model" vertex="1">
+          <mxGeometry height="36" width="240" x="20" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-10" parent="f6epddOMIslxKHVdH9le-7" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Power BI Report" vertex="1">
+          <mxGeometry height="44" width="110" x="20" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-11" parent="f6epddOMIslxKHVdH9le-7" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Fabric Data Agent" vertex="1">
+          <mxGeometry height="44" width="110" x="150" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-12" parent="f6epddOMIslxKHVdH9le-6" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#0078D4;fontColor=#1B3A5C;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="Workspace 2" vertex="1">
+          <mxGeometry height="200" width="280" x="330" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-13" parent="f6epddOMIslxKHVdH9le-12" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F8A70;strokeColor=#136351;fontColor=#FFFFFF;fontSize=12;" value="Lakehouse - UC Shortcuts" vertex="1">
+          <mxGeometry height="36" width="240" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-14" parent="f6epddOMIslxKHVdH9le-12" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Power BI Semantic Model" vertex="1">
+          <mxGeometry height="36" width="240" x="20" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-15" parent="f6epddOMIslxKHVdH9le-12" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Power BI Report" vertex="1">
+          <mxGeometry height="44" width="110" x="20" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-16" parent="f6epddOMIslxKHVdH9le-12" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Fabric Data Agent" vertex="1">
+          <mxGeometry height="44" width="110" x="150" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-17" parent="f6epddOMIslxKHVdH9le-6" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#0078D4;fontColor=#1B3A5C;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="... ×150" vertex="1">
+          <mxGeometry height="200" width="150" x="640" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-18" parent="f6epddOMIslxKHVdH9le-17" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCEEFB;strokeColor=#0078D4;fontColor=#1B3A5C;fontSize=14;" value="..." vertex="1">
+          <mxGeometry height="40" width="70" x="40" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-19" parent="f6epddOMIslxKHVdH9le-6" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#0078D4;fontColor=#1B3A5C;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="Workspace N" vertex="1">
+          <mxGeometry height="200" width="280" x="820" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-20" parent="f6epddOMIslxKHVdH9le-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F8A70;strokeColor=#136351;fontColor=#FFFFFF;fontSize=12;" value="Lakehouse - UC Shortcuts" vertex="1">
+          <mxGeometry height="36" width="240" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-21" parent="f6epddOMIslxKHVdH9le-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Power BI Semantic Model" vertex="1">
+          <mxGeometry height="36" width="240" x="20" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-22" parent="f6epddOMIslxKHVdH9le-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Power BI Report" vertex="1">
+          <mxGeometry height="44" width="110" x="20" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-23" parent="f6epddOMIslxKHVdH9le-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Fabric Data Agent" vertex="1">
+          <mxGeometry height="44" width="110" x="150" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#F59E0B;fontColor=#92400E;verticalAlign=top;align=left;spacingLeft=10;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; CI/CD Pipeline (fabric-cicd + Azure DevOps / GitHub Actions)" vertex="1">
+          <mxGeometry height="350" width="560" x="140" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-25" parent="f6epddOMIslxKHVdH9le-24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE9C8;strokeColor=#F59E0B;fontColor=#92400E;fontSize=12;" value="Bulk Deploy&lt;br&gt;(fabric-cicd publish_all_items&lt;br&gt;loop × 150 workspaces)" vertex="1">
+          <mxGeometry height="58" width="260" x="10" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-26" parent="f6epddOMIslxKHVdH9le-24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE9C8;strokeColor=#F59E0B;fontColor=#92400E;fontSize=12;" value="Test Workspace" vertex="1">
+          <mxGeometry height="40" width="260" x="10" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-27" parent="f6epddOMIslxKHVdH9le-24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE9C8;strokeColor=#F59E0B;fontColor=#92400E;fontSize=12;" value="Dev Workspace" vertex="1">
+          <mxGeometry height="40" width="260" x="10" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-28" parent="f6epddOMIslxKHVdH9le-24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE9C8;strokeColor=#F59E0B;fontColor=#92400E;fontSize=12;" value="Git Repository&lt;br&gt;(PBIP Format)" vertex="1">
+          <mxGeometry height="56" width="260" x="10" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-29" parent="f6epddOMIslxKHVdH9le-24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE9C8;strokeColor=#F59E0B;fontColor=#92400E;fontSize=12;" value="parameter.yml&lt;br&gt;(workspace IDs, schema bindings,&lt;br&gt;semantic_model_binding)" vertex="1">
+          <mxGeometry height="78" width="220" x="320" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-48" edge="1" parent="f6epddOMIslxKHVdH9le-24" source="f6epddOMIslxKHVdH9le-29" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="Parameterize">
+          <mxGeometry height="50" relative="1" width="50" x="-0.3205" y="2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="357.5" y="65" as="sourcePoint" />
+            <mxPoint x="202.5" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-30" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-8" value="UC Shortcuts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-31" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-13" value="UC Shortcuts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-32" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-20" value="UC Shortcuts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-33" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-9" value="Direct Lake">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-34" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-14" value="Direct Lake">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-35" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-21" value="Direct Lake">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-36" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-37" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-38" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-39" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-40" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-41" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-42" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-27" value="Commit &amp; PR">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-43" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-26" value="Promote">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-44" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-25" value="Validated">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6epddOMIslxKHVdH9le-46" edge="1" parent="1" source="f6epddOMIslxKHVdH9le-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="f6epddOMIslxKHVdH9le-7" value="Deploy to Workspace 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dbx-fabric" name="Old Databricks-Fabric Architecture">
+    <mxGraphModel dx="1345" dy="864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="db" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B3A5C;strokeColor=#0F2440;fontColor=#FFFFFF;verticalAlign=top;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="☁️ Azure Databricks Unity Catalog" vertex="1">
+          <mxGeometry height="130" width="1120" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="gs1" parent="db" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F0;strokeColor=#999990;fontColor=#1B3A5C;fontSize=13;" value="Gold Schema 1" vertex="1">
+          <mxGeometry height="44" width="190" x="65" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="gs2" parent="db" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F0;strokeColor=#999990;fontColor=#1B3A5C;fontSize=13;" value="Gold Schema 2" vertex="1">
+          <mxGeometry height="44" width="190" x="375" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="gsd" parent="db" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F0;strokeColor=#999990;fontColor=#1B3A5C;fontSize=13;" value="..." vertex="1">
+          <mxGeometry height="36" width="80" x="675" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gsn" parent="db" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F0;strokeColor=#999990;fontColor=#1B3A5C;fontSize=13;" value="Gold Schema N" vertex="1">
+          <mxGeometry height="44" width="190" x="865" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="fab" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFDE;strokeColor=#AAAA33;fontColor=#5A5A1A;verticalAlign=top;align=left;spacingLeft=10;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="Microsoft Fabric — 150 Workspaces (1:1 to Gold Schemas)" vertex="1">
+          <mxGeometry height="230" width="1120" x="20" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ws1" parent="fab" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#0078D4;fontColor=#1B3A5C;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="Workspace 1" vertex="1">
+          <mxGeometry height="170" width="280" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sm1" parent="ws1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Power BI Semantic Model" vertex="1">
+          <mxGeometry height="40" width="240" x="20" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="rpt1" parent="ws1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Power BI Report" vertex="1">
+          <mxGeometry height="44" width="110" x="20" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="da1" parent="ws1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Fabric Data Agent" vertex="1">
+          <mxGeometry height="44" width="110" x="150" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="ws2" parent="fab" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#0078D4;fontColor=#1B3A5C;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="Workspace 2" vertex="1">
+          <mxGeometry height="170" width="280" x="330" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sm2" parent="ws2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Power BI Semantic Model" vertex="1">
+          <mxGeometry height="40" width="240" x="20" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="rpt2" parent="ws2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Power BI Report" vertex="1">
+          <mxGeometry height="44" width="110" x="20" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="da2" parent="ws2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Fabric Data Agent" vertex="1">
+          <mxGeometry height="44" width="110" x="150" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="wsd" parent="fab" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#0078D4;fontColor=#1B3A5C;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="... ×150" vertex="1">
+          <mxGeometry height="170" width="150" x="640" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="smd" parent="wsd" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCEEFB;strokeColor=#0078D4;fontColor=#1B3A5C;fontSize=14;" value="..." vertex="1">
+          <mxGeometry height="40" width="70" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wsn" parent="fab" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#0078D4;fontColor=#1B3A5C;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="Workspace N" vertex="1">
+          <mxGeometry height="170" width="280" x="820" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="smn" parent="wsn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Power BI Semantic Model" vertex="1">
+          <mxGeometry height="40" width="240" x="20" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="rptn" parent="wsn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Power BI Report" vertex="1">
+          <mxGeometry height="44" width="110" x="20" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="dan" parent="wsn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#FFFFFF;fontSize=12;" value="Fabric Data Agent" vertex="1">
+          <mxGeometry height="44" width="110" x="150" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="cicd" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#F59E0B;fontColor=#92400E;verticalAlign=top;align=left;spacingLeft=10;fontStyle=1;fontSize=13;container=1;collapsible=0;" value="CI/CD Pipeline (fabric-cicd + Azure DevOps / GitHub Actions)" vertex="1">
+          <mxGeometry height="350" width="560" x="40" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="bulk" parent="cicd" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE9C8;strokeColor=#F59E0B;fontColor=#92400E;fontSize=12;" value="Bulk Deploy&lt;br&gt;(fabric-cicd publish_all_items&lt;br&gt;loop × 150 workspaces)" vertex="1">
+          <mxGeometry height="58" width="260" x="10" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="test" parent="cicd" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE9C8;strokeColor=#F59E0B;fontColor=#92400E;fontSize=12;" value="Test Workspace" vertex="1">
+          <mxGeometry height="40" width="260" x="10" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="dev" parent="cicd" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE9C8;strokeColor=#F59E0B;fontColor=#92400E;fontSize=12;" value="Dev Workspace" vertex="1">
+          <mxGeometry height="40" width="260" x="10" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="git" parent="cicd" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE9C8;strokeColor=#F59E0B;fontColor=#92400E;fontSize=12;" value="Git Repository&lt;br&gt;(PBIP Format)" vertex="1">
+          <mxGeometry height="56" width="260" x="10" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="param" parent="cicd" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE9C8;strokeColor=#F59E0B;fontColor=#92400E;fontSize=12;" value="parameter.yml&lt;br&gt;(workspace IDs, schema bindings,&lt;br&gt;semantic_model_binding)" vertex="1">
+          <mxGeometry height="78" width="220" x="320" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="gs1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="sm1" value="DirectQuery/Direct Lake">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="gs2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="sm2" value="DirectQuery/Direct Lake">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="gsn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="smn" value="DirectQuery/Direct Lake">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="sm1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="rpt1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="sm1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="da1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="sm2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="rpt2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="sm2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="da2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="smn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="rptn" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="smn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="dan" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="git" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="dev" value="Commit &amp; PR">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="dev" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="test" value="Promote">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="test" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="bulk" value="Validated">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="param" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="bulk" value="Parameterize">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="bulk" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#333333;fontColor=#333333;fontSize=11;labelBackgroundColor=#FFFFFF;" target="ws1" value="Deploy to Workspace 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

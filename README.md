@@ -17,10 +17,6 @@ Architectural resources for Databricks Unity Catalog mirror to Fabric.
 * [Limitations in Microsoft Fabric mirrored databases from Azure Databricks
 Limitations in Microsoft Fabric mirrored databases from Azure Databricks](https://learn.microsoft.com/en-us/fabric/mirroring/azure-databricks-limitations)
 
-## RLS Support
-* UC Mirror does not work with tables that have RLS enabled, as described in the "Limitations" section above. This offers two paths forward:
-1. Duplicate RLS permissions in the Fabric environment. Projects like [Microsoft PolicyWeaver](https://github.com/microsoft/Policy-Weaver) seek to automate this and reduce the administrative overhead, however Databricks security and audit is no longer applied in this scenario.
-2. Create multiple Databricks Gold-layer schemas that are already security-trimmed per-audience, with no RLS on the table. Leverage Fabric CI/CD capability and GitHub or Azure DevOps integration to connect a security-trimmed Fabric Workspace (containing a Power BI model, report, lakehouse, etc.) to the appropriate Databricks schema. 
 
 # AUTHENTICATION PATH
 1. Shortcut creator requests access at Unity Catalog API endpoint
@@ -40,4 +36,17 @@ Limitations in Microsoft Fabric mirrored databases from Azure Databricks](https:
 
 Here is the source Draw.io file: 
 [Databricks UC Mirror Fabric.drawio](<Databricks UC Mirror Fabric.drawio>)
+
+## RLS Support
+### UC Mirror does not work with tables that have RLS enabled, as described in the "Limitations" section above. 
+This means there are two paths forward to ensure UC permissions are honored in the Fabric environment:
+
+1. Duplicate RLS permissions in the Fabric environment. Projects like [Microsoft PolicyWeaver](https://github.com/microsoft/Policy-Weaver) seek to automate this and reduce the administrative overhead, however Databricks security and audit is no longer applied in this scenario. Responsiblity for security of the data is extended to the Fabric team.
+
+2. Create multiple Databricks Gold-layer schemas that are already security-trimmed per-audience, with no RLS on the tables themselves. Leverage Fabric CI/CD capability and GitHub or Azure DevOps integration to connect a security-trimmed Fabric Workspace (containing a Power BI model, report, lakehouse, etc.) to the appropriate Databricks schema. 
+
+![Fabric CICD Automation](images/Fabric_CICD.png)
+
+Here is the source Draw.io file:
+[Fabric Workspace CICD.drawio](<Fabric Workspace CICD.drawio>)
 
