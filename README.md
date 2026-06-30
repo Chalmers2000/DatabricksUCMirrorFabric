@@ -29,9 +29,11 @@ Limitations in Microsoft Fabric mirrored databases from Azure Databricks](https:
 
 # NETWORK PATH
 1. Service Principal granted JIT token to access UC storage
-2. Service Principal connects to UC storage through Fabric VNet Gateway connection
-3. ADLS Firewall grants access to Fabric Trusted Workspace identity
-4. UC table read with Service Principal JIT token
+2. Service Principal connects to UC storage through Fabric VNet Gateway connection for metadata
+3. Service Principal connects to UC storage private endpoint directly for data
+4. ADLS Firewall grants access to Fabric Trusted Workspace identity to allow traversal
+    * (described in further detail here: [Use trusted workspace access to access firewall-enabled ADLS storage](https://learn.microsoft.com/en-us/fabric/mirroring/azure-databricks-security#use-trusted-workspace-access-to-access-firewall-enabled-adls-storage))
+5. UC table read with Service Principal JIT token
 
 ![Network Path](images/network_path.png)
 
