@@ -40,6 +40,9 @@ Limitations in Microsoft Fabric mirrored databases from Azure Databricks](https:
 Here is the source Draw.io file: 
 [Databricks UC Mirror Fabric.drawio](<Databricks UC Mirror Fabric.drawio>)
 
+### If you would like to enable a PoC while Databricks is on a private network, consider these steps: 
+* [Fabric UC Mirror PoC tasks](Fabric-UCMirroring-ADB-PoC-setup.md)
+
 ## RLS SUPPORT
 ### UC Mirror does not work with tables that have RLS enabled, as described in the "Limitations" section above. 
 This means there are two paths forward to ensure UC permissions are honored in the Fabric environment:
